@@ -48,3 +48,47 @@ export const links =[
         CONTACT:"Contact"
     }
 ]
+
+
+export const cities = [
+    {
+        city:"Limpopo",
+        properties:2,
+        image:"/house-11.png"
+    },
+    {
+        city:"Eastern Cape",
+        properties:2,
+        image:"/house-10.png"
+    },
+    {
+        city:"Venda",
+        properties:2,
+        image:"/house-9.png"
+    },
+    {
+        city:"Ladysmith",
+        properties:2,
+        image:"/house-8.png"
+    },
+    {
+        city:"Durban",
+        properties:2,
+        image:"/house-7.png"
+    },
+    {
+        city:"Nelspruit",
+        properties:3,
+        image:"/house-4.png"
+    },
+    {
+        city:"Capetown",
+        properties:20,
+        image:"/house-2.png"
+    },
+    {
+        city:"Joburg",
+        properties:12,
+        image:"/house-3.png"
+    }
+]
