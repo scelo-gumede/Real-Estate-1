@@ -23,6 +23,10 @@ export default function Search(){
                     return <HouseTile {...house} key={i} />
                 })}
             </div>
+            
+            <div className="flex justify-center my-10">
+            <p className="text-white bg-green text-center px-5 rounded-md py-3 cursor-pointer ">Load More Properties</p>
+            </div>
         </section>
     )
 }
