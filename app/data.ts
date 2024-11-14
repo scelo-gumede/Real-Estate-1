@@ -1,6 +1,10 @@
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+
 
 const generateImage = "https://www.imagine.art/dashboard/image/tool/text-to-image?prompt=real+estate+house&transparency=undefined&token=722e0ebff2764f5cb434d13921ba1c8b1731537051254newsession&isSignUp=true&isSubscribed=false"
 const link = "https://demo.templatemonster.com/demo/465463.html?_gl=1*1h1rfvv*_gcl_au*NTY5MTEyODE1LjE3MzE1MzMxNTI.*_ga*MTI1NDQ0NzA3NC4xNzMxNTMzMTQ5*_ga_FTPYEGT5LY*MTczMTUzMzE0OS4xLjEuMTczMTUzNDYxNy41Mi4wLjA."
+
+
 
 export const links =[
     {
@@ -90,5 +94,65 @@ export const cities = [
         city:"Joburg",
         properties:12,
         image:"/house-3.png"
+    }
+]
+
+
+export const trust = [
+    {
+        title:"Explore Great Neighborhoods",
+        text:"Explore video tours, in-depth research, and articles on 20,000 neighborhoods. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: AccountBalanceIcon
+    },
+    {
+        title:"Find the Best Agent for You",
+        text:"Explore video tours, in-depth research, and articles on 20,000 neighborhoods. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: AccountBalanceIcon
+    },
+    {
+        title:"Find Highly Rated Schools",
+        text:"Explore video tours, in-depth research, and articles on 20,000 neighborhoods. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: AccountBalanceIcon
+    },
+    {
+        title:"Search Recent Property Sales",
+        text:"Explore video tours, in-depth research, and articles on 20,000 neighborhoods. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: AccountBalanceIcon
+    }
+]
+
+
+export const houses =[
+    {
+        image:"/house-11.png",
+        price:"$ 300",
+        place:"house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york",
+        occupation:"for sale"
+    },
+    {
+        image:"/house-8.png",
+        price:"$ 300",
+        place:"house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-1.png",
+        price:"$ 300",
+        place:"house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-4.png",
+        price:"$ 300",
+        place:"house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york",
+        occupation:"for sale"
     }
 ]
