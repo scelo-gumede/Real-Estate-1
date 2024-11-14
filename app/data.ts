@@ -53,27 +53,27 @@ export const links =[
 export const cities = [
     {
         city:"Limpopo",
-        properties:2,
+        properties:33,
         image:"/house-11.png"
     },
     {
         city:"Eastern Cape",
-        properties:2,
+        properties:14,
         image:"/house-10.png"
     },
     {
         city:"Venda",
-        properties:2,
+        properties:23,
         image:"/house-9.png"
     },
     {
         city:"Ladysmith",
-        properties:2,
+        properties:1,
         image:"/house-8.png"
     },
     {
         city:"Durban",
-        properties:2,
+        properties:45,
         image:"/house-7.png"
     },
     {
