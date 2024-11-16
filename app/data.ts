@@ -156,3 +156,27 @@ export const houses =[
         occupation:"for sale"
     }
 ]
+
+
+export const agents = [
+    {
+        name:"Natalie Moore",
+        occupation:"Sales Agent",
+        image:"/agent-1.png"
+    },
+    {
+        name:"Thomas Jackson",
+        occupation:"Estate Agent",
+        image:"/agent-2.png"
+    },
+    {
+        name:"John Smith",
+        occupation:"realtor",
+        image:"/agent-3.png"
+    },
+    {
+        name:"Natalie Moore",
+        occupation:"Sales Agent",
+        image:"/agent-1.png"
+    }
+]
