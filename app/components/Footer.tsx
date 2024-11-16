@@ -5,7 +5,9 @@ import { TextField } from "@mui/material";
 export default function Footer(){
 
     return (
-        <footer className="bg-grey px-5 gap-5 md:px-24 flex flex-col md:flex-row py-10 text-slate-400">
+        <footer className="bg-grey px-5  md:px-24  py-10 text-slate-400">
+
+        <div className="gap-5 flex flex-col md:flex-row">
 
             <div className="flex-1">
                 <h3 className="text-white text-2xl font-bold">REALTY</h3>
@@ -41,6 +43,13 @@ export default function Footer(){
             </p>
 
             <TextField variant="outlined"  />
+            </div>
+
+            </div>
+            <hr  className="my-4"/>
+            <div className="flex flex-col justify-center items-center my-5">
+                <p>© Copyright 2024 Realty - Real Estate <br className="md:hidden" /> Elementor WordPress Theme. All Rights Reserved.</p>
+                <p>Term of Services Privacy Policy Sitemap</p>
             </div>
 
         </footer>
