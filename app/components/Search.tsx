@@ -4,15 +4,15 @@ import SearchLabel from "./SearchLabel"
 import { houses } from "../data"
 import { useState } from "react"
 import HouseTile from "./HouseTile"
-const labels = ["view all" , "apartments", "farm house" , "house" , "villas"]
+const labels = ["View all" , "Apartments", "Farm house" , "House" , "Villas"]
 
 
 export default function Search(){
     const[data,setData]=useState(houses)
 
     return( 
-        <section className="space-y-5 py-10 my-10 px-6">
-            <h2 className="text-5xl text-grey text-center font-extrabold">Popular Searches</h2>
+        <section className="space-y-5  py-10 my-10 px-6">
+            <h2 className="text-4xl text-grey text-center font-extrabold">Popular Searches</h2>
 
             <div className="flex py-2 justify-center">
                 <SearchLabel data={labels} />
