@@ -21,7 +21,7 @@ export default function Search(){
 
     
     return( 
-        <section className="space-y-5  py-10 my-10 px-6">
+        <section className="space-y-5 bg-white py-20  px-6">
             <h2 className="text-4xl text-grey text-center font-extrabold">Popular Searches</h2>
 
             <div className="flex py-2 justify-center">

@@ -4,8 +4,8 @@
 export default function Market(){
 
     return(
-        <section className="bg-grey py-24 space-y-10">
-            <h3 className="text-5xl text-white text-center font-extrabold">
+        <section className="bg-grey bg-opacity-90 py-24 space-y-10">
+            <h3 className="text-4xl text-white text-center font-extrabold">
             Market Your Property With Realty
             </h3>
             <p className=" text-white text-lg mb-4 text-center">No obligation market appraisal for your property today. Our virtual options are still available if you prefer.</p>

@@ -56,3 +56,16 @@ body {
   animation: borderGreenStart 0.3s linear;
 }
 
+
+.imageBack{
+  background-image: url("/house-11.png");
+  background-attachment: fixed;
+}
+
+.blackEffect{
+  background-image: linear-gradient(to top, rgb(29, 23, 23) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blackEffect2{
+  background-color: rgba(0, 0, 0, 0.4);
+}

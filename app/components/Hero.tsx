@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 export default function Hero(){
-    const[hoverEffect,setHoverEffect]=useState(0)
+    const[hoverEffect,setHoverEffect]=useState(1)
 
     const options=["Property","House","Apartment"]
     const places=["Durban","Johannesburg","Capetown","Nelspruit"]
