@@ -125,34 +125,82 @@ export const trust = [
 export const houses =[
     {
         image:"/house-11.png",
-        price:"$ 300",
-        place:"house",
+        price:"$ 300,567",
+        place:"House",
         room:"5 beds 3 bath 234sft",
-        location:"New york",
+        location:"California, Bakersfield",
         occupation:"for sale"
     },
     {
         image:"/house-8.png",
-        price:"$ 300",
-        place:"house",
+        price:"$ 126,354",
+        place:"House",
         room:"5 beds 3 bath 234sft",
-        location:"New york",
+        location:"Villas",
         occupation:"for rent"
     },
     {
         image:"/house-1.png",
-        price:"$ 300",
-        place:"house",
+        price:"$ 300,873",
+        place:"House",
         room:"5 beds 3 bath 234sft",
-        location:"New york",
+        location:"California,Los Angeles",
         occupation:"for rent"
     },
     {
         image:"/house-4.png",
-        price:"$ 300",
-        place:"house",
+        price:"$ 287,534",
+        place:"Villas",
         room:"5 beds 3 bath 234sft",
-        location:"New york",
+        location:"California ,San Francisco",
+        occupation:"for sale"
+    },
+    {
+        image:"/house-8.png",
+        price:"$ 198,342",
+        place:"Apartments",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-1.png",
+        price:"$ 534,335",
+        place:"House",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-4.png",
+        price:"$ 553.243",
+        place:"Farm house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
+        occupation:"for sale"
+    },
+    {
+        image:"/house-8.png",
+        price:"$ 665,532",
+        place:"House",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-1.png",
+        price:"$ 534,333",
+        place:"Farm house",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
+        occupation:"for rent"
+    },
+    {
+        image:"/house-4.png",
+        price:"$ 223,534",
+        place:"Villas",
+        room:"5 beds 3 bath 234sft",
+        location:"New york,Queen",
         occupation:"for sale"
     }
 ]
