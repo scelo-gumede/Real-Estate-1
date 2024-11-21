@@ -10,7 +10,7 @@ export default function Agents(){
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
                 {agents.map((agent,i)=>{
-                    return <AgentTile {...agent} value={false} />
+                    return <AgentTile {...agent} key={i} value={false} />
                 })}
             </div>
 
