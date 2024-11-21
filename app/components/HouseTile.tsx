@@ -45,11 +45,11 @@ export default function HouseTile(props:HouseTileProps){
             </div>
 
             <div className="p-4 h-[40%] space-y-1 text-grey">
-                <p className="text-black"><span className="p-1 w-[1px] rounded-3xl  overflow-hidden h-[1px] mr-2 bg-green"></span>{props.place}</p>
+                <p className="text-black flex items-center"><span className="p-1 w-[1px] rounded-3xl   h-[1px] mr-2 bg-green"></span><span>{props.place}</span></p>
                 <p className="font-extrabold text-black text-2xl">{props.price}</p>
                 <p>{props.room}</p>
                 <div className="flex items-center justify-between">
-                    <p>{props.location}</p>
+                    <p className="text-sm">{props.location}</p>
                      <p className="p-2 hover:bg-green hover:text-white cursor-pointer transition duration-300 delay-75 border rounded-[20px] font-bold border-solid border-grey border-opacity-25">Show details</p>
                 </div>
             </div>
