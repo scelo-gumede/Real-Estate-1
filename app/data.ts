@@ -129,7 +129,8 @@ export const houses =[
         place:"House",
         room:"5 beds 3 bath 234sft",
         location:"California, Bakersfield",
-        occupation:"for sale"
+        occupation:"for sale",
+        id:1
     },
     {
         image:"/house-8.png",
@@ -137,7 +138,8 @@ export const houses =[
         place:"House",
         room:"5 beds 3 bath 234sft",
         location:"Villas",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:2
     },
     {
         image:"/house-1.png",
@@ -145,7 +147,8 @@ export const houses =[
         place:"House",
         room:"5 beds 3 bath 234sft",
         location:"California,Los Angeles",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:3
     },
     {
         image:"/house-4.png",
@@ -153,7 +156,8 @@ export const houses =[
         place:"Villas",
         room:"5 beds 3 bath 234sft",
         location:"California ,San Francisco",
-        occupation:"for sale"
+        occupation:"for sale",
+        id:4
     },
     {
         image:"/house-8.png",
@@ -161,7 +165,8 @@ export const houses =[
         place:"Apartments",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:5
     },
     {
         image:"/house-1.png",
@@ -169,7 +174,8 @@ export const houses =[
         place:"House",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:6
     },
     {
         image:"/house-4.png",
@@ -177,7 +183,8 @@ export const houses =[
         place:"Farm house",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for sale"
+        occupation:"for sale",
+        id:7
     },
     {
         image:"/house-8.png",
@@ -185,7 +192,8 @@ export const houses =[
         place:"House",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:8
     },
     {
         image:"/house-1.png",
@@ -193,7 +201,8 @@ export const houses =[
         place:"Farm house",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for rent"
+        occupation:"for rent",
+        id:9
     },
     {
         image:"/house-4.png",
@@ -201,7 +210,8 @@ export const houses =[
         place:"Villas",
         room:"5 beds 3 bath 234sft",
         location:"New york,Queen",
-        occupation:"for sale"
+        occupation:"for sale",
+        id:10
     }
 ]
 
