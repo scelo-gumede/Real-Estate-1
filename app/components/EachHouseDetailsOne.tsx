@@ -15,6 +15,9 @@ import LoanCalcutator from './LoanCalculator';
 import EstateAgentPerHouse from './EstateAgentPerHouse';
 import { useState,useEffect } from 'react';
 import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
+import CircleIcon from '@mui/icons-material/Circle';
+import Line from './Line';
 
 interface EachHouseDetailsOneProps{
     houseId:number
@@ -22,6 +25,8 @@ interface EachHouseDetailsOneProps{
 
 export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
     const[screen,setScreen]=useState(0)
+    const navigation = usePathname()
+    
 
     useEffect(()=>{
         const handleResize=()=>{
@@ -40,12 +45,14 @@ export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
         return <p>House not found</p>;
     }
 
+    const hyperLink = navigation.split("/").slice(1).join(` > `)
 
-    console.log(screen)
-    console.log(window.innerWidth)
+    console.log(navigation)
     return (
         <section className="px-5 my-10">
             <article className='space-y-4'>
+                <p className='text-black text-lg'>{hyperLink}</p>
+                <Line />
                 <div className="h-[70vh] rounded-lg overflow-hidden">
                     <Image src={oneHouse.image} className="h-full w-full" width={300} height={300} alt={oneHouse.place} />
                 </div>
