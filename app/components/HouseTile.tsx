@@ -3,9 +3,9 @@ import Image from "next/image"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import WifiProtectedSetupIcon from '@mui/icons-material/WifiProtectedSetup';
-import AllOutIcon from '@mui/icons-material/AllOut';
 import { useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 
 interface HouseTileProps{
@@ -14,7 +14,8 @@ interface HouseTileProps{
         place:string,
         room:string,
         location:string,
-        occupation:string
+        occupation:string,
+        id:number
 }
 
 
@@ -50,7 +51,7 @@ export default function HouseTile(props:HouseTileProps){
                 <p>{props.room}</p>
                 <div className="flex items-center justify-between">
                     <p className="text-sm">{props.location}</p>
-                     <p className="p-2 hover:bg-green hover:text-white cursor-pointer transition duration-300 delay-75 border rounded-[20px] font-bold border-solid border-grey border-opacity-25">Show details</p>
+                     <Link href={`/search/${props.id}`}><p className="p-2 hover:bg-green hover:text-white cursor-pointer transition duration-300 delay-75 border rounded-[20px] font-bold border-solid border-grey border-opacity-25">Show details</p></Link>
                 </div>
             </div>
         </article>

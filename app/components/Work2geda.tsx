@@ -20,7 +20,7 @@ export default function Work2geda(){
             <div className='grid px-16 grid-cols-2 md:grid-cols-4'>
             {
                 colleagues.map((Colleague,i)=>{
-                    return <Colleague />
+                    return <Colleague key={i} />
                 })
             }
             </div>
