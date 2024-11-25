@@ -1,5 +1,6 @@
 "use client"
 
+
 import Image from "next/image"
 import { useState } from "react"
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -30,8 +31,9 @@ export default function AgentTile(props:AgentTileProps){
                 </div> ) }
                 <div className="absolute top-0 z-10 left-0 w-full h-full blackEffect"/>
 
-                <div className={clsx("z-30 transition space-y-3  duration-300 bg-transparent absolute translate-x-full right-0  translate-y-1/2 bottom-1/2 flex flex-col",{
-                    "-translate-x-full":enter
+                <div className={clsx("z-30 transition space-y-3  duration-300 bg-transparent absolute  right-0  translate-y-1/2 bottom-1/2 flex flex-col",{
+                    "-translate-x-4":enter,
+                    "translate-x-full":!enter
                 })}>
                     <FacebookIcon  className="bg-greyWhite p-1 transition duration-300 hover:scale-110  rounded-lg"/>
                     <XIcon className="bg-greyWhite p-1 transition duration-300 hover:scale-110  rounded-lg" />
@@ -43,3 +45,4 @@ export default function AgentTile(props:AgentTileProps){
         </article>
     )
 }
+

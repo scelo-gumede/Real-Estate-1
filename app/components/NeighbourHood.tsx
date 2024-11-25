@@ -34,7 +34,7 @@ export default function NeighbourHood(){
             {
                 neighborhoods.map((neighbur,i)=>{
                     return (
-                        <Neighbour {...neighbur} />
+                        <Neighbour {...neighbur} key={i} />
                     )
                 })
             }
