@@ -24,7 +24,7 @@ interface EachHouseDetailsOneProps{
 }
 
 export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
-    const[screen,setScreen]=useState(0)
+    const[screen,setScreen]=useState(window.innerWidth)
     const navigation = usePathname()
     
 
