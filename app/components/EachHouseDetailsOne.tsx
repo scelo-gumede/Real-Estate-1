@@ -131,7 +131,7 @@ export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
 
 
                 <div className={clsx("",{"w-30%":screen > 816,})}>
-                    <EstateAgentPerHouse />
+                    <EstateAgentPerHouse     />
                 </div>
             </div>
             </article>
