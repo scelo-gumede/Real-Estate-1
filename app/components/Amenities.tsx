@@ -20,8 +20,8 @@ export default function Amenities(){
 
     return (
 
-        <div className=" shadow-lg p-5 space-y-5">
-            <p className="text-xl font-bold text-grey">Property Details</p>
+        <div className=" shadow-lg my-10 p-5 space-y-5">
+            <p className="text-xl font-bold text-grey">Amenities</p>
             <div className="h-[3px]  bg-green w-16" />
 
             <div className="grid grid-cols-2 gap-2 md:grid-cols-3">

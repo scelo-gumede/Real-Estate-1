@@ -1,3 +1,5 @@
+"use client"
+
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ConstructionIcon from '@mui/icons-material/Construction';
@@ -9,12 +11,28 @@ import Image from "next/image"
 import { houses } from "../data"
 import PropertDetails from './PropertyDetails';
 import Amenities from './Amenities';
+import LoanCalcutator from './LoanCalculator';
+import EstateAgentPerHouse from './EstateAgentPerHouse';
+import { useState,useEffect } from 'react';
+import clsx from 'clsx';
 
 interface EachHouseDetailsOneProps{
     houseId:number
 }
 
 export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
+    const[screen,setScreen]=useState(0)
+
+    useEffect(()=>{
+        const handleResize=()=>{
+            const screenSize= window.innerWidth
+            setScreen(screenSize)
+        }
+
+        window.addEventListener("resize",handleResize)
+
+        return ()=> window.removeEventListener("resize",handleResize)
+    },[])
 
     const oneHouse =  houses.find(each=> each.id == props.houseId )  
     
@@ -22,13 +40,23 @@ export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
         return <p>House not found</p>;
     }
 
+
+    console.log(screen)
+    console.log(window.innerWidth)
     return (
-        <section className="px-5">
+        <section className="px-5 my-10">
             <article className='space-y-4'>
                 <div className="h-[70vh] rounded-lg overflow-hidden">
                     <Image src={oneHouse.image} className="h-full w-full" width={300} height={300} alt={oneHouse.place} />
                 </div>
 
+            <div className={clsx("flex gap-5",{
+                "flex-row":screen > 816,
+                "flex-col":screen <816,
+            })}>
+
+
+            <div className={clsx("",{"w-[70%]":screen > 816,})}>
                 <div className='p-5 space-y-2'>
                     <div className='flex flex-col md:flex-row justify-between'>
                         <div>
@@ -94,11 +122,24 @@ export default function EachHouseDetailsOne(props:EachHouseDetailsOneProps){
                         <p className="text-white bg-green font-bold text-center px-5 rounded-md py-3 cursor-pointer ">Ask a Question</p>
                     </div>
                 </div>
+
+
+                    <PropertDetails />
+                    <Amenities />
+                    <LoanCalcutator /> 
+                </div>
+
+
+                <div className={clsx("",{"w-30%":screen > 816,})}>
+                    <EstateAgentPerHouse />
+                </div>
+            </div>
             </article>
 
-            <PropertDetails />
 
-            <Amenities />
+
+
+
         </section>
     )
 }
